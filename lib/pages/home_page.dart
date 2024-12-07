@@ -19,6 +19,7 @@ class HomePage extends StatelessWidget {
         ),
         centerTitle: true,
         backgroundColor: Colors.deepPurple,
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
       drawer: Drawer(
         child: ListView(
@@ -114,7 +115,7 @@ class HomePage extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               const Text(
-                'Mobile App Developer | Software Engineer | Flutter Enthusiast',
+                'Mobile App Developer | Software Engineer',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 18,

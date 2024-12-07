@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:taotech_portfolio/pages/contact_page.dart';
 
 class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        foregroundColor: Colors.white,
         title: Text(
           'About Me',
           style: GoogleFonts.lato(
@@ -13,6 +15,7 @@ class AboutPage extends StatelessWidget {
           ),
         ),
         backgroundColor: Colors.deepPurple,
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
       body: Container(
         decoration: BoxDecoration(
@@ -135,7 +138,7 @@ class AboutPage extends StatelessWidget {
                   icon: Icons.school,
                   title: 'Education',
                   description:
-                      'B.Sc in Computer Science, Lagos State University',
+                      'First Class B.Sc in Computer Science, Lagos State University',
                 ),
                 HighlightCard(
                   icon: Icons.code,
@@ -147,7 +150,7 @@ class AboutPage extends StatelessWidget {
                   icon: Icons.star,
                   title: 'Achievements',
                   description:
-                      'Recipient of LASU VC Scholarship and MSFN Scholarship Award.',
+                      'Recipient of ERASMUS+ Scholarship, MTN Scholarship, Amongst others.',
                 ),
 
                 const SizedBox(height: 20),
@@ -156,7 +159,10 @@ class AboutPage extends StatelessWidget {
                 Center(
                   child: ElevatedButton.icon(
                     onPressed: () {
-                      // Add navigation or contact functionality here
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ContactPage()),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                       foregroundColor: Colors.deepPurple,

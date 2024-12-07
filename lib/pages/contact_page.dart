@@ -15,6 +15,7 @@ class ContactPage extends StatelessWidget {
           ),
         ),
         backgroundColor: Colors.deepPurple,
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
       // Wrap the entire body with Container to set the background color
       body: Container(
