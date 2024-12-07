@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:taotech_portfolio/pages/about_page.dart';
+import 'package:taotech_portfolio/pages/contact_page.dart';
+import 'package:taotech_portfolio/pages/projects_page.dart';
+import 'package:taotech_portfolio/pages/skills_page.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -15,6 +19,66 @@ class HomePage extends StatelessWidget {
         ),
         centerTitle: true,
         backgroundColor: Colors.deepPurple,
+      ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            const DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.deepPurple,
+              ),
+              child: Text(
+                'Taofeek Akintunde',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            ListTile(
+              title: const Text('About Me'),
+              leading: const Icon(Icons.person),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AboutPage()),
+                );
+              },
+            ),
+            ListTile(
+              title: const Text('Projects'),
+              leading: const Icon(Icons.work),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ProjectsPage()),
+                );
+              },
+            ),
+            ListTile(
+              title: const Text('Contact'),
+              leading: const Icon(Icons.contact_mail),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ContactPage()),
+                );
+              },
+            ),
+            ListTile(
+              title: const Text('Skills'),
+              leading: const Icon(Icons.star),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SkillsPage()),
+                );
+              },
+            ),
+          ],
+        ),
       ),
       body: Container(
         decoration: BoxDecoration(

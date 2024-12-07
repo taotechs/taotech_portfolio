@@ -35,7 +35,7 @@ class AboutPage extends StatelessWidget {
                     curve: Curves.easeInOut,
                     child: const CircleAvatar(
                       radius: 60,
-                      backgroundImage: AssetImage('assets/image/taotech.jpg'),
+                      backgroundImage: AssetImage('assets/images/taotech.jpg'),
                     ),
                   ),
                 ),
