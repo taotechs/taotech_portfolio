@@ -7,18 +7,18 @@ class ProjectsPage extends StatelessWidget {
       'title': 'Publication Venue Recommender',
       'description':
           'A mobile app providing recommendations for research publication venues.',
-      'link': 'https://github.com/taotechsolutions/publication-recommender',
+      'link': 'https://github.com/taotechs/pubvenuerec',
     },
     {
       'title': 'E-Learning Platform',
       'description':
           'An e-learning platform with interactive courses and quizzes.',
-      'link': 'https://github.com/taotechsolutions/e-learning-platform',
+      'link': 'https://github.com/taotechs/project_ilearn',
     },
     {
       'title': 'Portfolio Builder',
       'description': 'A Flutter-based web app for building portfolios.',
-      'link': 'https://github.com/taotechsolutions/portfolio-builder',
+      'link': 'https://github.com/taotechs/taotech_portfolio',
     },
   ];
 

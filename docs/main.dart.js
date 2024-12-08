@@ -20304,7 +20304,7 @@ SW:function SW(){},
 SV:function SV(a,b){this.a=a
 this.b=b},
 agg(){var s=t.N
-return new A.oq(A.b([A.aw(["title","Publication Venue Recommender","description","A mobile app providing recommendations for research publication venues.","link","https://github.com/taotechsolutions/publication-recommender"],s,s),A.aw(["title","E-Learning Platform","description","An e-learning platform with interactive courses and quizzes.","link","https://github.com/taotechsolutions/e-learning-platform"],s,s),A.aw(["title","Portfolio Builder","description","A Flutter-based web app for building portfolios.","link","https://github.com/taotechsolutions/portfolio-builder"],s,s)],t.m0),null)},
+return new A.oq(A.b([A.aw(["title","Publication Venue Recommender","description","A mobile app providing recommendations for research publication venues.","link","https://github.com/taotechs/pubvenuerec"],s,s),A.aw(["title","E-Learning Platform","description","An e-learning platform with interactive courses and quizzes.","link","https://github.com/taotechs/project_ilearn"],s,s),A.aw(["title","Portfolio Builder","description","A Flutter-based web app for building portfolios.","link","https://github.com/taotechs/taotech_portfolio"],s,s)],t.m0),null)},
 oq:function oq(a,b){this.c=a
 this.a=b},
 YV:function YV(a){this.a=a},
